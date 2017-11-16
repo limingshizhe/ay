@@ -20,6 +20,7 @@
 		var divs=document.getElementsByTagName('div')
 		console.log(divs)
 		box.addEventListener('touchstart',function(ev){
+			ev.preventDefault();
 			var opleft=this.offsetLeft;
 			var ex=ev.changedTouches[0].pageX;
 			console.log(opleft)
